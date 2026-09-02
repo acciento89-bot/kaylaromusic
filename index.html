@@ -12,19 +12,26 @@
   <title>KAYLARO — Dance • Party • Energy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Permanent+Marker&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="KAYLARO home">KAYLARO</a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#music">Music</a>
-      <a href="#about">About</a>
-      <a href="#socials">Socials</a>
-    </nav>
+    <a class="brand logo-brush" href="#top" aria-label="KAYLARO home">KAYLARO</a>
+    <div class="header-right">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#music" data-i18n="navMusic">Music</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#socials" data-i18n="navSocials">Socials</a>
+      </nav>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="de">DE</button>
+        <button type="button" data-lang="pl">PL</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
   </header>
 
   <main id="top">
@@ -34,74 +41,78 @@
       <div class="grid" aria-hidden="true"></div>
 
       <div class="hero-content reveal">
-        <p class="eyebrow">POLISH / GERMAN DANCE & PARTY</p>
-        <h1>KAYLARO</h1>
+        <p class="eyebrow" data-i18n="eyebrow">POLISH / GERMAN DANCE & PARTY</p>
+        <h1 class="logo-brush">KAYLARO</h1>
         <p class="tagline">DANCE <span>•</span> PARTY <span>•</span> ENERGY</p>
-        <p class="hero-copy">Catchy hooks, modern club production and high-energy party vibes.</p>
+        <p class="hero-copy" data-i18n="heroCopy">Catchy hooks, modern club production and high-energy party vibes.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer">Pre-save debut single</a>
-          <a class="button button-secondary" href="#music">Discover KAYLARO</a>
+          <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer" data-i18n="preSaveDebut">Pre-save debut single</a>
+          <a class="button button-secondary" href="#music" data-i18n="discover">Discover KAYLARO</a>
         </div>
       </div>
 
-      <a class="scroll-cue" href="#music" aria-label="Scroll to music">SCROLL</a>
+      <a class="scroll-cue" href="#music" aria-label="Scroll to music" data-i18n="scroll">SCROLL</a>
     </section>
 
     <section class="release section" id="music">
       <div class="section-heading reveal">
-        <p class="kicker">DEBUT SINGLE</p>
+        <p class="kicker" data-i18n="debutSingle">DEBUT SINGLE</p>
         <h2>Robisz To Specjalnie</h2>
       </div>
 
       <div class="release-card reveal">
-        <div class="cover" role="img" aria-label="KAYLARO neon release artwork">
-          <div class="cover-ring"></div>
-          <div class="cover-title">KAYLARO</div>
-          <div class="cover-track">ROBISZ TO<br>SPECJALNIE</div>
+        <div class="cover cover-real">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABYPERMRDhYTEhMZFxYaITckIR4eIUQwMyg3UEZUU09GTUxYY39sWF54X0xNbpZweIOHjpCOVmqcp5uKpn+Ljon/2wBDARcZGSEdIUEkJEGJW01biYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYn/wgARCAFAAUADASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAAHyGPQBiGqAEBghghghgmAJlIYiGCGKJzmoayBsAWiGsgAAAABoLE9wHdQvpfCl5zX2k8FdOFSUEjBHVkZHVzCGgPS4Zcl7XXi/NH1eafM12W15x9F5mpwKpkQEAyk26lt2JhR6Hn+5Hb4XtvNz5p8Yft+f7tnier53TNeRr6HTbpwrokv571/Ho7eP6NnX5/3vAmtvb8X2I+f9jTAvp5IWOv536PU+cjfKyBmTTNSiCWyXTGaV9H5fsYHl+p40ecP0NPQOjPDi4vb8i79rN+VJyfReJ6lnjc+vTbv6N8OZ1ZHlHsb48Y/E+p4Tq8X1przfW08OuZM6YlVOLQGonNY0FlsU2el6fFebh6Xy/oWHqPllnn4CvX5X2y6/PdvDc+32+XzSe3z+D0tep4GuJ6McVx7/AM9eZt6/gqPp/P4dLccnG+dk3qKbiVgWS1XLdVN70mFe3w4LLnLSb9vBLcT0pMuyOYg7bt847eJlvthrlPQa+de+Mk1ei8x1YxM9s1lHRyLjUO+fSGlSRlormbq1o3Cs2fTFNXi5XomEVzX0Jlw9fLOfXXMW68usydlcuN1t0cJM9eeA12TgNbxATrhMx0YymBoZbmpYHRvnsXtFqlSopRZIZ2Ga2DE2DKmrAQUTkms4km5gJso0EAMKrC3tGJrpdc2nbvN+XPfztcvTl33lzlPPeC2uZoRBoGa1ExNUmRqrMxZ3GqhJnApyAEAA3w6dWXW11nnRrMa59OevXvhGd782ct9/n9nDc82uGrj1uDn6tHOkS7IgpkqxIWiWOPo8/fFJrXnAIAYhg5tLPVy610ka63CqLmd+as9PTw1rPXDfTnMsKjV59sdJ5+26rh6ZdEinRmE9Ks5X1s5zfmOHC57edIGAAGqGIaYhBirp05bbvDoebhp08zW3d5o6elwROhBLlAyc+t87nbW+ak6teWca9LTh15uoznMvzd+DqzQuvAqaQGNLfHvzrky9ThXA1WsSiUYizqnPXPao6eM0ZDRPTzaiVDE7Y1IjqyM9NdJrle91za6POsmZzT5ryvNINcipoKOmb5+uFOla5by8GTnfAGrBoQ0za9eA51E97cKrG3dZXbnULPLqzuG70z1m2nMa9OHZNcWfVz5cmN5786AuG6GlpCOtY7OxzdGbOUtXkAkAEAB3Da0vPS9aw1iI0CXOXN49MsdL0zudLmpmtezh3I49spM8d8LwTTuNlUzrKauDo5itlEqS0w0MQEAAVNW1Tuds27WaZOvPGuN8vQsqtYUJJo98ehuJtZ3llvi5Q1VxpIpppqyRpkVTQBA0ANUAQVOyqqV6ySMiUzFOKBXNVcubQpS+viF6s4JomhnOquMVc3LTQk1ciAAABgqFkpItou7q1tO/K27iJ1lMkDiyQYgGUTddU6YadKz2jDoM3m0dM8+NzvkhO5SaRAIABUspAqAS6nS9N7yc9eMaxeCSTmkDmhgrTpg5ouOibrVZ47WZ1FOCXnx0z6eYaLkTCSkiGCYDQKAJemWl66vIdrzpM5FQ4oBh1ItCVtuKlrTK5veclN61hUmplKOJnXLQyTOqzDXNBqsw0eTNDINMwNdMdL2rTLpdJx6s2uWNcnnkCc//xAAqEAACAQMDAwQDAAMBAAAAAAABAgADERIEECEgMDETIjJBM0BCFCNDYP/aAAgBAQABBQL/AN+i5uVGFYBaiIXNOgqpXUJU2tvTos8Cks9Fk6Bpv9eJumkEWjTWYiNSRpWo+maFHOf49O1aiU72jX/YeAlNqzogQV6+E8nT08VrrhUZFqI6lWo0zUbhU0/uqV+KR201LNvqoxWqteqxjktUoIyrWGZACh9TZ2tUpHz3NKtqbDJQAo1Gox201PJ5rPlpXyTVU7yinppqqk0y2patuIBc009NFbIaj82kW9RuVp0lpytqFSabldVUxX7pi1Kr8+2BcoMVmo1G9BMKaVMqurW8pE0n8yo2Ccu44Fd8nmmokFwWWmmC1VS1K2E1Xq2lH8OoN6unp5vWfCmezffTIL7amjjtQoEmJTVIzBBVcVGRcU1T3bSrerXbGngxlOmUePqkWUKvqrqvz0hjTOpxqqwYVtPlNOfY+nV3AWmter6jbns6TyTYUdRfatR9NqfwrajBqVdmq6v4aVbvVfBDydLTxSFgsVhUevUxQzRsA1exru4pofNOoUNLUK8dbxtRUWPUep0noHTpfjqWtSlCvjOHDVDTjG5U2NWpmmnWyap8ng1VkfUO0veJUwRmLbDiZXd6hdt1rMIXFSEW6TB2KNlpapt6VUpKjLVh4MXk1K3SBeEEHEzEmFSIaTYrRZo1PGOmMenilOlkir7PTGTFFN4OsdGZKemxhUglSIKRsUImLEmnFpR7Bk9O5PvZVOx/1LSJZlvGywpiGqTKFy6C7VFLTUN7kOIItMvc7M215efWxgg6EvkwJa6wNmMbpyaodSWpkMx9NZQ4iH2U+BKRczIKFLO9RSYvNKyq341epiA6mO6Qv72ezirirOzdkdFKG1UYk0+FjC7epFQCZizOm2VkRysZy0WwLVCZfgEie4yzTFpi09Mz056cK26xtbcdF+IWyguJ56MTMTMJiJZZ7ZksznqTMzJpk0uZczIw9Np6ZlhLRfIW+1oOq0tLCcS8vLnpPX9y0VS0tExgQmBIiEz0Yy2hHtpWy9TptLdFpaWluo9Yn3MjjsBEpjEYGVGxCVDlU+TeF898sBPUmcLdhfH9krjsYsrm00591S4NMXaofe0HnvVG7lIXFTG+7RZWGS0Vyes2TIPTQwweZeXMvvaWlumo1h3Kfl9jxMoTefdJ5gVqFQ1Wo9zt/UwlujKZzIzncmVGue4OIxuDDyNgu1J+KrWDNLzmfcuN8ZjtaYiY7vxD1kW6wZnyOQigyoqBAfbeXl9r7HzLbFyIKhhcxaoMyHQSBKj37CLnHQqevmwGw8X2vLy+x8rhe5mRhN4Pkze1GszVPbTcmXhMYRjfsUhw1r1FxZVlulWtP5VEwnGF+AiGnYTjZvIGw83mXOXC2vxMwEVrAOYTeHnrXyGtG5OJxZpfqBmI28CXtPpbRfaW8rYQk4A83932QMBYubWMHgw89QieJ4J8tqHx7Al7H6S0ZeIDAeGn1/zg+R+bfjpfNr259E3xYRvcepXICwfJ/l8i3nsfZiXjH2mDwsbY/jHlfkfm/wAKfzMH4ZVbj660PKfKt5Xgdo+E8OdrS2MO38weftvgnkz/AImNLcbDqU8vD2hDB4+vtfl/LbcWEHn7PxXyZ7fTIEaOTuOoG0Y37Yn2DaMby62usLSob7X4ymQmUuTBPvFgObTyf1BASJc9VuLS0sJwJeLeG+QQYt4sTLe08fqA2HEtDLw73tL7YzEQWus/pRYNUBGROx2X9I7L4MAh6Lz7tLDYS/MBtL7EcEYxBD+gPkfJHFMcNF8t5fpv0qpMwAioJ7bAXj8xI/z76+fsjheA0Hkw9gC8A9y22JMENoBE4V/l312txaHsgS0EsYBFE5mRnO15UPPfXYwQ9m23M5i8TOZGXmUvC0fz312JgMvtbpt0A7C042Ea2TeWKxuZ9C2K4xbRbRLXi44i1hayWiYxLXS2US04hiwww9niXmU5nO3Gx/RXdJnybGEdH//EACURAAIBBAICAQUBAAAAAAAAAAABEQIQITESIDBRMgMTIkFhQP/aAAgBAwEBPwH/AGwR1gjyf0/Q9XZJ/LPxUqSDZt33bRPd7tu2lddJ6LrxkghnFkQjiVUwcVo4IhCSKkjiPGrK8YIFq8TsqJSHnBySFVgz6Gqv0jj9T0OqpHJ2RBFoIIZwOK9kUkr0cv4fcqPuVeznV7OTJqIFQ2caVsdKKdEEEEEEEDaRK6IgllBtSJJIXxKSbSTf6lXZbHag1gWcFRTaSSUciSrvJxkSRhmkN25o5ZG82geB3oUsqpgi6aZNnNlsgi2SWVO6Ui/Ebgb6YYlOCYFUiYqmyHsqGVWg0JyPLgfRFHyHlipayPdkfsZUVCunA6uqFuRbFrZX8jkzNlaq0+BClE5G7okVUHKbJZH4EsCWSPyyVUb600SKhDQlmSrfgptVsb60o0SSVb8FJzyPI7YtImciRjfgpdlkrUW//8QAIBEAAwACAQUBAQAAAAAAAAAAAAERECAwAhIxQEEhUP/aAAgBAgEBPwHlfHeC6vMJh4g8XCHqxiIUuOoWr2R5w1MImH5GsTCxNvAjqynicyY2XHTy/u64aXeExSlLwLipcUW6KXWspTuR3C4aW6wh2/g05SnRp1OITvDNYhaed5i5Z8PmF6PzK9Kl9SenTuyvShP4X//EACwQAAIBBAAFBAICAgMAAAAAAAABEQIQITESIDBBUSJAYYEycVCRE2AjM6H/2gAIAQEABj8C/wB/VPk4UhpaMENZIp5saOFGeTinPgg9b/oxSaRmlGNMzo0T260+LN9jBFP5WysiP33Gnb4RVXA7y9K1UYyKlOz4Z2et/RTR9kEU668+SCEcNG/Np7KyOHwcSI7nAvsXyKm0ISJRUT4MGN+SKc1HG91HCu9kPqpW4aP7v8lS7IpgTs2fuzduKpfohODhHU0pPTb0/j8Wp/RUfHWTbz4V+KnVlU9W9KJqZhCRw+D9WwmLjVsZGxlKGn+JKZNGH4OF7pOKTwj4WuqySK/7tK/EWIIpFxMRPgm0+bZcGNIx3s15t8xbDIeGSsVGkep9d/NuGrR5I2uztIiSOytlTUbj9WaXfklk8kSerD68ip5MPPJFOlzQaNGibfkITGx1FNJCp6qoVoMq/C9iU5PyIISlnDSiFu2FLMjdWvAoHXV2H8mXoqr/AKKCPBRT5KKfkrq8H4wurCNwjj7IqkSYsQkVZg8ycK3Zsrq7jrds6KmhGaoQ6UxLZV8ippYnU9GKfsT8E/BrJnqsw8nD3FSvsmp4H/4TWyX9GKbRfJBBg7muTZs2vYRbJjobvo1ybNmzZvmz7HXscWc3wouzKMY97w2VpqMEK79lrpqSIzdWStkSH7GF1H8C4eZV34u71y4NGvcLmh6YuEb7LZPJvm0a5NewXLNuF/Rw/wB/wmKsi6s9ePB8dXXM+Kbb5MmBzf1dKGY0ZMc8uvPi282niz4vrml7tnVuGPsfm01dOWn03yM82yfj6ZFgxTkfoU9z8ceTFGfB/wBZP+JQL/jRMQiXzubeTUEY6TMjxJOr8MX+7s+7/dlJ8c8csdf5v93Z99dDJ6a5I5N30a5p6cdZdHZ4Ms/LP7MER7jRqDVt8ujXJJslk+31zTbZs3bBkmTBHt9dR3zC/ZH8Pk1/Ebz8WiCPAvIv4HJo7Xk4n/B7/wBUwYMCg+RzsfEPiMmbOd9hjHI+I9Rm/e2TXsN+30Rw83//xAAqEAADAAICAgICAgEFAQEAAAAAAREhMRBBUWEgcYGRMKGxQMHR4fFQ8P/aAAgBAQABPyH/AFbf/wAyf6Gf6J/BLiEH/EuXIOwmyCuNGu8QiUkG22Mjm0t0Sb0Qpc5FPsLexuClPtdfBr7lVB6PNkJE2P0EmH85I/8AEI/8I366jbuRJj96aAvoP5wgkTmjeIajfRpBVbJ9Bedf8Bt2brZn8j+hTnnOOjKEsNEbEkTHS2SbSMiLHksJDJnuQ24xHf7mSQuh5PVCQCuNHR38YJGbLb8tEc+3pCimEjGCabvZRxaqLI5Xwny+5KXLlFhMSMh3v4Dy6zJuFM/ozLf+JGlZ0yJ2ZZ3g9myJ/kcOVkbFeF2K65ifsMo6URsTRvsRY/YVYf1It+dmzzFsLIcp3Bq32ycLf8LkJHpVcQr/AL5Rk9sshekdiXYyqaXYolWUxLn8GGtthEhLSR4M6EqYjJ2HnMdiFo7BOge2O6vTjIbe/YmRYlB/rODUNrDLLTW+jJ8vfxr+DslY/wBzmpq914IKvxz9jVR0Q32Y4BJ/9z1SjCNDJeFKE28IT+V+BkxV4YRGxgBJp6HezwfWhJlqEOmhf/bBh4sTRcGV2kY/h22a/wCcKEITlX6oIa2kqVW3oONTaZgOt14NrYtDmKVXbM0CfR/cMpFjt0M7GS7LSe1RVVfYuw4hsh6xrHB+zjMoYPaKaRE/2c2uGmjEuvmDzavHXyLXLfBCx/ZG/ThsZfPwJ9VGUf8A9DQx7ZL8D8/yfZjCf+0WGLRTsNNDwGzVsewZDyt8M2qPvbrHBuOyi9Ui16Fv7K0zs8JcozQYhC5Wyf57Ftqes8t8a8CaSbXhi0TUfFIQ22mmDdZGR8MaJUqCdGlVt+hLVMzYRRJnn0IrhL2dqn4RunWzIeX0Ia29GZfSM8tayPlLXBuHlCcQ3xv4og07jseW0WxZNkIZpxDtLd0PZCdi1Ba6Mvl6FbR1IujDPI5ssptjN6pMwlOQ7Ht9UNLXqEVUp9lmzUf1l9D5BELaqqHFY8lEXSCPEhUvsxJg+KF2fwOFHFbcpUeB+xOcVkuyxpJa/RGTNaJZ9b9jSFwsCAyN7FRJ+Bie97fEM/pEO6EeqTB2f51ZHa2VZ3I7qPCLJrRPhp+/QkvIbA3UCyxzKgae5vsURGFZmBjFurZsBTBBLc+D3TYZggsbPSR1InRgeEeUzC1W3oLxReiXSxFBg59CixoZGR+XwqE2yjMp9M3evCGoSieMIbtOiGNtMe10eJheIvt69nka+EChCfBd5mBC8BoaM0nxOKTp2Kp1Dk8l2NsQbezvMb8no4vseU+0q9DVoz0pXhH1HuE4Z9hedwnwsmdkwYJRO9IwXA8SpimxaHYJEGEnwhOXzMx9kdCz2GfLIQg/xT6YlwhWypGlR5CMqvWIPRC98FPN54WdqQybiMVgvpzCckIT4hCEINYHzL88kPXhu1S0VWh74WY4hMO4n92II6YMvKvEY0hCEIQhCEIQhD330MEvg8cP8/wai6HZgW7fonGwXJenSQnd5mBX1uP8wy/qwPU+WEIQnGDBCEIQy/wk5cx1sJsvyQhDoNGQ7xGYx6WRnrWEZn4g524YWF7wm7CJwkgwY88QxS2x/OC38Gn34EOFWejc6Ewhd+4dow3hj4YJ6N0hvhDtsJC/oSZ+C+hg2D8Q23Qr4EzBa/gFC+LVUIYRUUH+0X9D16HsJpCHT9vAiV+28iBv0hth8JuUq8kRDFHbIT4PUJF0Q+h4b76Ni/JkXvQvlBR6H1GQ59iVuxEqp+CNBaXHgryPkb4+2UZGOC/Ihk2YbNE/sTXKjJ1deR/KDMzgY1vy5XDfCI2+C0HpocRGVy6cbPoVccYW8Qh2Jb7DHbFcKZHNl78GbCGjxdFODjNeX0jBX/HR+N8ELl2Aj17MYg7cUQ2/Ab+DMOiOHRt1UVmjN2vYoW46HnFxCw0KcCib8GYNEcNqlkt5z8x06mW9jTyXoUpgiWhETfghJ1qs2C+h6+C4j8GmqmvCqF8y8wY8CZOr5dT0OimyZYmkH2dcC7kFCTT7GyRUbx1NsdA9Xk6PVr/sjJOefA5lwcOl9CGe77GtKX0EVam8OiOJY8fZSVkTt8j2qSk0Ifx7Cpuv1EdzotaoGekHmCWJKtjzX/A9avRXsDUgNLNRbB9CxTowwe0RBI4eA3jjATyjV9jP30dhcjQ1sXhEGwPvVdD2ekHyuWDo9kNtrsuMXOik7ag7Vd6R0NL+FvYyyZHM4yWX2acGrg24iF+hoME+zY8sgsEOp/kHBC9x3ktk4fD1HkRhW7bhDPxR9/n+FD4PRDZ/gQ4lpISsXkS5DbTj0N4qN6E4yX3h2YpovIwzwN7MwPjeX4Mb2/JhbsfG50mPlONMwIzZsbC8EP8AiZMtDsJz1DVsHlDc6Kqrb+hlcJnlQ70SKjB+hH2/Apdp/wAQGHszqn2GJf0Pjc6SH8GNUX3RfgvnWckKtQ89iV0+gpqczaqKpJajGTfE9kSZOxthDW/2Gb7OiMwUXmmfg9Eewju8j0+FtDO/j1/HUwMqtiloxveBR+R/Y2N4EwLzZIVsi6P1QlTblo6lJJssbZ3x5MvUKXSZHCumSeuOkU7H/EvjJU4I98E66Gr5T6FSGWxeTI7Yyf0DPMn5HYzfoc9xfsQBH4RPL4JX9C3A+H/CvkmYagjbYYnos5RY40NLlIkN1HCntpE9uiibGSLdLH0VvYTojfst7Z9G4+9DGz2jN+KJG0+hnXL+SRPgqjwZHE2Iq0TOzEsmYaU5X0N5oxfgxi/seC6BrLowHrW9GPKJZGn0FjXvhcv5L4zV4onJ5BVGgaseoa4vxboYSEMKvsSnf6mRlfgZ9/4HR4ZGV/8AgJma2WnvY9i2Ph/JfFcsWxzVFhswKhweh/Gg57PQyQ8qnbl/gv0/A2a/wVlode9Ibt3oY8y8dcz4r4dG7FsbHQynBofwnE4fQn7GTyTlofhn8DDHtfo/A/qYehs/Y1OifzdhNjBvgbPaIP4EuP0yUbngj0Ws8mDTY3jB9kNXddDryqEC79ipWZYWTF52M59Bj7Jgz06x9md9YeHnvhgjdy9G7l6phw6wZPRgzsJOzwM9jMDtog9B5oQ1hl+BF9CD5vF9FMCadEXR6DbEGR9GxteP7GSwYd8Dn8/YQzzdjpg6CzxNTn//2gAMAwEAAgADAAAAEMCtPcMtvokMccANsiPgAMthxGPWcfNfdssoW4glGIOwm0YnbnBQ21N+a8e8Cl/8ERVkzxl87iaU2ZETQwTs8vOHSXa3vXbvikw1xwNDlV/J16JXEf5MryoU3pe2H7L3V3epT9QQSnfS/n5X6zZ+rfTUASj1MpXvvUeHhgLtODrgguNmaVNHz9LZGEVGVMuv+/S0lQPjqpmxtw10nnjzF9c2/UoTdguP+bb7q1N+cVjvhTHCcf6qW5CmyxYQ0dK6oIHO1ctD8gApJESsjJPeUrYInayUabFFZQhYVWOolIjhrrMDYdIONwZ6GhtEh7YfZFdjoJo0uwwwhlxp5SexWeZIEsCNSKAAANWf5+elSQJY3ea0t1UNTQWAwv2oKT1IkHCgxV0QQAbGli/Cfv/EACYRAQEBAAMAAgEEAQUAAAAAAAEAERAhMUFRIDBhcZGhgcHR4fD/2gAIAQMBAT8Qs/Uznf0M6skseNTwDZzg6bYTrl6/ALrOCWwCJn8roCyNh5Oui9z4Eo9kMU43jLL4zjLq6HUDX6LtSQa9ke92acv2ZNIyDzyXW3ecumPizYPB7ODhZ2XhlliczCMugwkJjCZj3JtkOCyy0lLf1ZdpLd5L0YL68I2098CfbPByELkAxDv/AHkDp/jgcJ8xwRmLvZMcZwmXxjISMB6kmHd4E1h6Z3kGMSh/0kXfZUzY6vUJncHXBVo7a9W+2Y/C2Pn+c5+H9X0df6HG0+X9yHy23Ssbc4A6aimls6HJng8bfSZx3Zee1hNWUdWGpI9uwHsMGy6sW8MW22Bh+GSTyd7JZeHefX/v2sEHnz/xLbANueWPmxwYu8tdec+b4tvIKd2kZAe5RxhMi3+bO2I38uocHxIPlqWZbEEPZe48hy8dx9T32E+X4hn2Rfkl2L17Dsd7ukYd23BeaKJO0i7yKMuD5be0p4yMyNEPb3BvXP5u4rLeQq6s5fxF6/BfENu3Cw14XpHvt97PV3z+bWQxwvUnU267H8fUfRgeH6kHg+3RX0w/Jz+odTuL3J3CJ7T+Z17h4Nn1fRCb3OfcD6/u6JAln5mezq6xDJnkNssu6/vOZg9BAaHzjbY1cJfUH4he2bsvS+J5OQoEbvkM3srv73zwHfcZvRCsILH3YO5amOMs/BmGySKBHzgmkLd3Ix3Z+hGpZ3tpxtv49QR6sPEi84//xAAfEQEBAQADAQEBAQEBAAAAAAABABEQITEgQVEwYXH/2gAIAQIBAT8QOM/zX84JAJM+Bjvg1KHxtvH/ABPB/YRb3wGxAWZPCHCNds/yfBnpeF5lhEnAb1DIbDu6ecQ8L8sb3blsPWQa3rLyXe+RljHeywcI/bMCeXafoWr1eLwhlivDMssv2ISJbxHm8bHHreE/buSybLJD9gJA2yXL+kaYSvJMl3LHnPvs28bba/y7/Dhra2ry9wy2W1surrhctWo1gWTrYPgTfkNt+vcPeZAFh3bbHkNjLnJvD+/ouulifXy/twxH8J/5lrHn3s5dYQ0i214VJTsnWshQJgPx2F5m2OESPMjvyyyddcLxv/JR7IByuTnosXM529gTqHHUC3vTkMIKvXwwfbPbwIPner8uuXgHVmcjgb9+Njjb3jOPJzMPl+up4d/OHhN6gnheS9bH1vB7L1s+c7d2f2QSnotSXrLwf4FgnxnKoTrf+LUHX+B5Z9JJZJBB/gefP//EACkQAQACAgICAgEEAwEBAQAAAAEAESExQVFhcRCBkSChscHR4fAw8UD/2gAIAQEAAT8QPipUqV/+cy/oDHiOptj8vwVAmO//AEqVK/8AJwRy/JCFqZWVR8H6CWy2DD4qVBpdYlVKlSv/ADr4JpAlSpZmIAVnGYp4lhz+h4iV8XPUv9LCK0X15hkgmI9X+JanaBbfGYZeuaJyZbc34gzAPAxWgr0S60FrHYE9yoFsLaAwr1cF4fUQ/RuDbXMSn5vhoRGPSwFiDZ5SzEc6j8yrJezb94AoA6BHg2+Sj+SVS28dnhhNYcgb8XAgunJXL7MdlqHMdxgWhEoC7/qVAmWplslDnUKfN1mKz2/6uDoQVm8ol+eDzD1Z5YQmQp5P9/EeORauVYLCc6pnDUvJVSooy0fiUR7YZFvJDIpaZQWMy6JdqvxiGQYiNX/o/eKvan7iz+AcPBdf6P8AEAQYGCc3hDZ9xfAg1d6vMCgLdG2C6Qlx7j90WrH+8BFm7fogkg8eIJYbL+CFUArC6SOyMmGJHbMhJvLl+A+BK+QzK57b6aP7mQgxU3XMIrrBAIToWvE8xKIq5V5lUF0L5eP8/UCiiMcJX9S9Xr88JkEFCcnDDUOR89Sj1H+hLMlKv71+0qZ8/wCD+4waFAB2woVYy7eWF9kg901/UcrN3mCsN9tEGYChceZsCjORf8QlWhR+4/1A2O0dGP8AMpEorp11E3cyktfywBNLfvCKzMY1EuBKlSvkgFVoDmCdxn7fFDI6P+D/ADMrmBaBK7V+RZYvADy22wpqsKC+o8ONBKs5iCgCx7lYVhQ7eIKRadfKzAQAPUo52r0NRVRLv6sBteYKpYtLo5qM5NspXNwHMMVXf3Asyu/Lz7+AWOGAoe/Es5QOqWAD0PrEcFfZ/UJVWuPP/Z+olllErLBXyzBTlh3fmHY+4I6lRLi+WzRz0PnaMcXP/EEtBmEWEoLnpiWBaWVZEVpFKVWVwFweYdFjA1mLubcnvmPcdtdyuZhF70fzHfbhPUsdpyKKloULm/RmYDwRgHcmCWDRNG8VKSJKp4xOxQ375/eYJKitlYWGnPkgyRtdD06Y1Q5Aw1xHe7gGWIymaj+WJvmIPPn5rM2IajEvE1+N+IiUkLS6l1xXLHPublEvqFTi2Tjw/wCYFIAUjkSBRWbXn0+JVEADQCJl4HJmEC2imDULj4/qwTGxWe4WN4Dt4/7xHKVViMpWNVoihRTVl1K8byqIga7F5e4bkroTg5f+7lgsN8CUryRv4KW+GUIKWDtp/wARWTatrLZO3T7JZATty+5xQe16eyH33cs+dzK8NHA+pQSzv5NZmiMrpinmFJZKlTDEFIbW/wBf3Ks3Q/e/2ILdy1DoOX+sb1RUl3C0ErUc+3/ajhWraxRtoSZeA2od4/zCBgcPP/a+pnXg3vl/iOh5gCKKV0RZLPwfvuXwK8rcfxefRzFCljACImkjyen+yNK5wHReoZyywy1LDYy/H3M+j/WpUXfmv8hw+SXKp4psYq8y5gYlShfEtCAzOkVOceZi9jySpUOENlbzy50EuZFl70fw/mEuZPFtq0zFRrC14XpjoANI7JcAXagQZFSHyTmMzu5ZoiGxPZ8BFJ4IMGeiV4ztUrjOwiwMtIOAottmoUqrNqDUFcBZWUsA6rUJ1c6/MR4G8dNRqTj75TYktHdQLrKV1cUtgEV2So1a0Mxks8xKaYFBN9MIWWnhgYlTUFWpXyXn1GqA0GWCVi0dw0yGrJeMXVsxetpHMpIEKvo8xJM1K4nKFOOMtJrcHKsBdTpCT1EvU7W9wT3XUAz7VcfcoeTZWoKlKxjL1KXiZvBEyzAbsuUVzSheBLMi4C46lu4KncYAZUL1dQv80D/xMMLVfdXClYV6jMsy9Dz1s/MsXqJFnMIjgiHSfFdwbjZBlUwc4d8kaMqJG6QfDiDUXLRq5khYI3l5f6lX1C6ceJcSFEcrqWhSSZviZB8Dw0TLoMHMvvZ+qbblw8f9fxHByjnr/rmMnBbli7QAwoaMvqOT5U6X/wC3LGqWo0Ea11RaXtNy4xcZuXLiGITG9eIVa6gI5lPl5dRJ2iL3gEVCwGJ0tjCZSQ7XmO8PQUQpxBW9yt1GA54yzUVYifRDRPeYYpdLcCEQq8bEx7cy79/5lHRmh5iUG5fSMjEAtljrdRPL/wBULOwA7/zLpGYHNdxqr/7Ytt0HglRsuXxMOmxojpiDWiAAnpniJ0cywvJXmX27BClKvLbDiP7Rzx9stCHS7VLc/uoLk/RE8fth6J4hR2PqPxVKlVEeJ+6Adss1WWkcWD0mZStvwqGOg8xCRE5IcPAGGK2i8Rq2XlgJEVtV9zCKVagnP7g26PuW5JKtEo2mPKs5Z+iVaU6zl+gfUWLofUwCvwTUbqxKWbvcOxEckTJ1KXTMOqCDOyWSmoxSL4gGAfO4FhH3LXVFVW4CCXiZYeghAJHNfNEyj8VuUPcA/plcTFGiKmAIr09Eb7T7/RyuiP6CYCEqz6m7KjBruD1HM9RgLzmV5Kt5pgAB2xXN+JE6Ac4i6tv7jnBjxLWUC6dsu+KcXUvUf4QJXwvGATfXztvm9P0+wk2HMcyF9xxr9JMVu52OI4ZaB4TMVlkvdTUfMPRAhg6O4QmG4PMAqGLR/EFCq8nZCWeAP3MQ8Sj4z/yB9llhpmKVduoW8D7Zh2vMcEsH9ovMbc/pILHubT8W4tUco3PhGKlDVdy4xsCPRLcISL6uc9y3p8wmf6ISRwQ/3Kn4lKe4wgg+E8JWdTDaQtp+V+Nm1LQbYv6N/JllExhiV8AasCFzXiBwWr8+fi/EaXxcEMzcER4WCKVkeaiuisA7qCwldLx5lJV27Xtjs9IFAbueaEWxT7hLv6I/Z9TLhIRRi+yUcShyT0Sh0nw9CF9R2/oJcq54Q8pWXqJZKimcYsqNi88Siap6mGpiEFFCJiKDHMnmXvAA8eY34FX1BIAiuFjNoMdRL2KxUPcaGAtgnudTTogMGoLDXlENJJwKe4rj8CPGWMWg3qIjfglR9fOpcVZfqZR3LxmcRBjnsGXlbv1MwgaxGYTDctgYLdH6QMsA6tiICrzBVT91Ahf3SLXN+or+2csBDSPMRFvMbgbnhfmDaqOwv0wtPyS/MX38Poo9Yjwtlz508PUyTeI9PhIYZuFQ+nAvyJgfCwfkkXazwxEK14itWBhGooSPKxHhaFIFHduI2yCuoDtSzz7io6jb1ErG4KUbydxHZDxZQw2eY4ZWv1CcNfEo6CmqnWPZEFjcxGooUAcwkmYb6XFeWPxWLImYGibXUraI4avF6lRkMlOIx+QHuXcpfiFZiy6I4Xv7hDEMQSq1mCNShtiFerdx6kbtymmHpfzP6oqiOD58xNhwllbZGZY1qVUqpgM/iXh0L5EGisDGI5JQGyIDVOKKgUh6bMByy1HQL4j65jO9CLfwbmR8CPXcAlRTEwEJiEirFjuWPAWDzA+1pdSjB8XLmQLb9pYSmXmElI126Je5TcyAfEAQJcIci4ruPkfUDSJriFKFmeCvEY8HDbmKlZfmW2Gm6TDBlABsThlgSG29N9wEXkZftEeaqWkUptu8iYruXgC3euoZqsYLEimwFEIW6t11LR46j8E0+MNqruoBxi8k8QdShNPUXmULkqoyjAFe5cimo7z82VPU1vtAhS2TOyUp6ZeQUogYwqBGmIMlF5YwhDfiGlMXLkm92zWeqgMsqRDUIvDveo6pjS2nP5S2wtIUuroOo1VEjBs35SyUB0Eu1p8Q5p2ace4DAvMuvh8TbCb3+6MAmWLY6YyJXIdQIuPAHMVuD5IMpVuCyN1cDgffUCyK0tlkGDQdwwTU08Q1qEBmtfmbBo/n4rv9AzTBsW9GAUDBG5opXJ4hMSdPEoEQF0l23UsdUxVHMYgBc13PRIPFuVnyW/qFVWY9RbSvzM0DJf5gAoV07qLDAad+pQUpBGpGH2PGN5iRpjKaCKu2cH+Jhg+RiBMhFSDX5YmLbVpZUphHtFd7d11EkN6gA4LV9+YFF/iFc5jnMM/FQZdInEB4BzL24riDAgbC+I6fw9SudVnEZbGTmZs60+oEF5hoiy1Nmz4lrKqubiyctP5jL3LMIEvh9RjsOM3AUSt8TWBAQDVmfuVJc9PVcygGhtO3zGMF0l8EqvlU+QOPNS5Ob4iplmA/8l5Y88t+TLvN7xDS38BH4ZxOMErOIyDVaTMelBadZuWcxBzdZnDMYDcMrn73CyfsRAUVtVGzG5wYKlYUu1qSliV2MuKEo84gcwB0lj9xioBKAcxFmdym8ReZKc8xW38aZXJtuGMYxjVMvFAOSNtKoOXziECzUfcWa2E5gWB3Ofi+/kanfzHUuo0U1e5Ys7aIKjUFbTYxtDXnG6YQxMOZziIZN9PuCyTEocF6cQhZX8QkEl4BF4Jd5S4K04SoVsuz93qArYuIKKe/s9ypAOAcEFC+YzTFwu3+pnGMYAWki4mgITmu5fLDcGYJHbX6GCxgQbMdQyhW0lSKg+0rK2bRgRCp3FOAV0xGBaCyERJZnBdpAW230TYV4LG9jeNx1AV1SWVL8wF2V7leVNIZmokG2AxRETkp6xBozTuMxSOkOoOrzHcY/Dm3WPk1ucw165hq5v45jBkHMGcKoNCBbbgZJCsBKRoyo7QDzLgHEsAYGpYWB9Q/+aCFAdwVlagxrdLijXLvEV5EHEKEMc6v1CJdSmjFS3cNjLF3UDvzAKWxFvmOhh91xVjLwfM2jGEDDgc7uc/NxcUTSpfyxqAjnMLJdF6lAo09aizhuM2flMoxePjfMdOoVAGPEag4XuOuGvGYLyJ5lKFjwIamzlS48j6Q1185r1GBEdpiPKTTEbcgTFUmYVq0y0HLBdRmQPcYzTFjuX8i5hPJKZT8BaBzCKGqxKyv8zIQXwwBbpK8Usgva8wxdJ7iEo6gjBriKJ6DBf4SGTc8y0tA6lrZcQAsahRaL5bYN7xn+0cNv8epdCXigx6DuUU8Vx8Frkrm4pylanaDfrGP6WPgXNykoj8MJujczKcXzKsP4QQs2Yq4NsowLbxxGt3VwMqJXMI6Ch+JaVRURlnmUtwrmG8QXRbyqJin1Cz8w7LPxKmOFWEQXbW/7UCtGt9/9cR3Xk+f+I9gJrXUcTmd5j+pfxp8LGG5cnTGZtXe5cruO5ht6eLmRVpGs/mZVlMdTyQMy1VfxXxTGsMdwTNDtIVbUSrifiOSu6qDEItOhLWOOiDKWNAcxhtPfA6PMPaEoPEbt21j44jLO74mAWCljNP03Hj5YaWAgtUTOmYBcnZLb19Sm1vqN22O0V04ggfIRXRjzBKplgqzLiml7YaoBPMEy9ZQlJgQcAxN1fbF5V1TNZgMxOKnMDXKHWJqCww+IFM77jFsMY/CpTMymYR/QTYdQrk/kgJLwmwCIXRD9fcITFbInmEMLZRAcZguf5mihC5NtR3LfqGvZu0uXFOn7InFj4qFVNnJABDTjEG7AXFVcpV/QgqVdc+4oLR7hp/EvYa2fpr4Ybj8uiNMGGbuIOF5xAlBfqNYB5xFpYY9Rt/1EiVCC85hTNzJ/ghzK/UEoELgC4qxoP5jRVD4tZZxR4LhOCvNy3OTm5ig7Dr3CURSzfP3C19tvR/tmgIB5uOfVAoXNZuv2gFD0O3Dr7r8Rhf8zT19H3NYBcDeaYit6mh2mQ+9R2OIdq2XrxcUtrUBTFGH5/1GXuqBf3jua5S/m6rnUrW50N+dedRBCJejyzLYGls5L1zVzC4Lyr/c8JpHqqor4PtUZoId8wK2J4IbWS27TlD9InCoQR+M9GJZyXKnCN/ELbncPuGdauoJxy8QDI26mTFnm4Ddit+JZP500Vi6GC6FL5iMqXgjFYrriaj+s38MPlVCSWw1HRYRpOI6livFwho5FkdH3EVOI/H/2Q==" alt="KAYLARO — Robisz To Specjalnie cover">
         </div>
         <div class="release-info">
           <p class="release-date">25.09.2026</p>
           <h3>ROBISZ TO SPECJALNIE</h3>
-          <p>A high-energy first chapter from KAYLARO — built for late nights, loud speakers and a hook that stays with you.</p>
-          <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer">Pre-save now</a>
-          <p class="microcopy">Streaming links will appear here after release.</p>
+          <p data-i18n="releaseCopy">A high-energy first chapter from KAYLARO — built for late nights, loud speakers and a hook that stays with you.</p>
+          <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer" data-i18n="preSaveNow">Pre-save now</a>
+          <p class="microcopy" data-i18n="streamingLater">Streaming links will appear here after release.</p>
         </div>
       </div>
     </section>
 
     <section class="about section" id="about">
       <div class="about-panel reveal">
-        <p class="kicker">ABOUT</p>
-        <h2>New music.<br>New energy.</h2>
-        <p>KAYLARO is a European dance artist blending Polish and German influences with catchy hooks, modern electronic production and high-energy party vibes.</p>
-        <p>The debut single <strong>“Robisz To Specjalnie”</strong> arrives on 25 September 2026.</p>
+        <p class="kicker" data-i18n="aboutLabel">ABOUT</p>
+        <h2 data-i18n-html="aboutTitle">New music.<br>New energy.</h2>
+        <p data-i18n="aboutCopy">KAYLARO is a European dance artist blending Polish and German influences with catchy hooks, modern electronic production and high-energy party vibes.</p>
+        <p data-i18n-html="aboutRelease">The debut single <strong>“Robisz To Specjalnie”</strong> arrives on 25 September 2026.</p>
       </div>
     </section>
 
     <section class="socials section" id="socials">
       <div class="section-heading reveal">
-        <p class="kicker">FOLLOW KAYLARO</p>
+        <p class="kicker" data-i18n="follow">FOLLOW KAYLARO</p>
         <h2>@kaylaromusic</h2>
       </div>
       <div class="social-grid reveal">
-        <a href="https://www.instagram.com/kaylaromusic" target="_blank" rel="noopener noreferrer"><span>Instagram</span><b>↗</b></a>
-        <a href="https://www.tiktok.com/@kaylaromusic" target="_blank" rel="noopener noreferrer"><span>TikTok</span><b>↗</b></a>
-        <a href="https://www.youtube.com/@kaylaromusic" target="_blank" rel="noopener noreferrer"><span>YouTube</span><b>↗</b></a>
+        <a href="https://www.instagram.com/kaylaromusic" target="_blank" rel="noopener noreferrer">
+          <div class="social-name"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg><span>Instagram</span></div><b>↗</b>
+        </a>
+        <a href="https://www.tiktok.com/@kaylaromusic" target="_blank" rel="noopener noreferrer">
+          <div class="social-name"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.1a4.6 4.6 0 1 1-4-4.55V12a2.2 2.2 0 1 0 1.6 2.1V4h2.4c.55 2.15 1.8 3.45 4 3.9v2.4A7.2 7.2 0 0 1 14 8.6"/></svg><span>TikTok</span></div><b>↗</b>
+        </a>
+        <a href="https://www.youtube.com/@kaylaromusic" target="_blank" rel="noopener noreferrer">
+          <div class="social-name"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a3 3 0 0 0-2.1-2.1C17 5.6 12 5.6 12 5.6s-5 0-6.9.5A3 3 0 0 0 3 8.2 31 31 0 0 0 2.6 12c0 1.3.1 2.6.4 3.8a3 3 0 0 0 2.1 2.1c1.9.5 6.9.5 6.9.5s5 0 6.9-.5a3 3 0 0 0 2.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8Z"/><path class="fill-dark" d="m10 15.2 5.2-3.2L10 8.8Z"/></svg><span>YouTube</span></div><b>↗</b>
+        </a>
       </div>
     </section>
 
     <section class="final-cta section reveal">
       <p class="kicker">25.09.2026</p>
-      <h2>THE FIRST RELEASE<br>IS COMING.</h2>
-      <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer">Pre-save Robisz To Specjalnie</a>
+      <h2 data-i18n-html="coming">THE FIRST RELEASE<br>IS COMING.</h2>
+      <a class="button button-primary" href="https://distrokid.com/hyperfollow/kaylaro/robisz-to-specjalnie" target="_blank" rel="noopener noreferrer" data-i18n="preSaveTrack">Pre-save Robisz To Specjalnie</a>
     </section>
   </main>
 
   <footer>
-    <div><strong>KAYLARO</strong><span>© 2026 KAYLARO / Kamilunavo Records</span></div>
+    <div><strong class="logo-brush">KAYLARO</strong><span>© 2026 KAYLARO / Kamilunavo Records</span></div>
     <div class="footer-links">
-      <a href="impressum.html">Imprint</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html" data-i18n="imprint">Imprint</a>
+      <a href="privacy.html" data-i18n="privacy">Privacy</a>
     </div>
   </footer>
 
