@@ -19,6 +19,8 @@ body {
     var(--bg);
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 a { color: inherit; text-decoration: none; }
@@ -54,19 +56,37 @@ button { font: inherit; }
 .scroll-cue { position:absolute; bottom:28px; font-size:.65rem; letter-spacing:.28em; color:#777485; writing-mode: vertical-rl; }
 .section { width:min(var(--max), calc(100% - 10vw)); margin:0 auto; padding:120px 0; }
 .section-heading { margin-bottom:42px; }
-.section-heading h2, .about h2, .final-cta h2 { font-family: Unbounded, sans-serif; font-size: clamp(2.2rem, 6vw, 5rem); line-height:1; letter-spacing:-.05em; margin: 10px 0 0; }
+.section-heading h2, .about h2, .final-cta h2 {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+  margin: 10px 0 0;
+  text-shadow: none;
+  filter: none;
+}
 .release-card { display:grid; grid-template-columns:minmax(280px, .9fr) 1.1fr; gap: clamp(30px, 6vw, 80px); align-items:center; padding: clamp(22px, 4vw, 46px); border:1px solid var(--line); border-radius:32px; background: linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.018)); backdrop-filter: blur(16px); }
 .cover { aspect-ratio:1; border-radius:26px; overflow:hidden; box-shadow: 0 30px 80px rgba(0,0,0,.42), 0 0 50px rgba(255,45,198,.08); background:#09090f; }
 .cover-real img { width:100%; height:100%; display:block; object-fit:cover; }
 .release-date { color:var(--pink); font-weight:800; letter-spacing:.22em; font-size:.8rem; }
-.release-info h3 { font-family:Unbounded; font-size:clamp(1.8rem,4vw,3.6rem); margin:.4em 0; letter-spacing:-.05em; }
+.release-info h3 {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight:800;
+  font-size:clamp(1.8rem,4vw,3.6rem);
+  margin:.4em 0;
+  letter-spacing:-.045em;
+  line-height:1;
+  text-shadow:none;
+  filter:none;
+}
 .release-info > p:not(.release-date):not(.microcopy) { color:var(--muted); line-height:1.8; font-size:1.05rem; max-width:620px; }
 .release-info .button { margin-top:18px; }
 .microcopy { color:#6f6c7a; font-size:.78rem; margin-top:16px; }
 .about-panel { max-width:900px; padding: clamp(30px,6vw,74px); border-left:2px solid var(--pink); background: linear-gradient(90deg, rgba(255,45,198,.06), transparent); }
 .about-panel > p:not(.kicker) { color:var(--muted); line-height:1.9; font-size:1.08rem; max-width:760px; }
 .social-grid { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); }
-.social-grid a { min-height:140px; padding:28px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-end; font-family:Unbounded; font-size:clamp(1rem,2vw,1.35rem); transition:.2s; }
+.social-grid a { min-height:140px; padding:28px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-end; font-family:Inter, system-ui, sans-serif; font-weight:800; font-size:clamp(1rem,2vw,1.35rem); transition:.2s; }
 .social-grid a:hover { background:rgba(255,255,255,.04); color:var(--cyan); }
 .social-grid a:last-child { border-right:0; }
 .social-name { display:flex; align-items:center; gap:14px; }
@@ -83,7 +103,7 @@ footer strong { color:#fff; font-size:1.25rem; }
 .footer-links { display:flex; gap:22px; }
 .footer-links a:hover { color:#fff; }
 .legal { width:min(820px, calc(100% - 10vw)); margin:0 auto; padding:140px 0 100px; }
-.legal h1 { font-family:Unbounded; font-size:clamp(2.6rem,7vw,5.5rem); letter-spacing:-.06em; }
+.legal h1 { font-family:Inter, system-ui, sans-serif; font-weight:800; font-size:clamp(2.6rem,7vw,5.5rem); letter-spacing:-.05em; }
 .legal h2 { margin-top:42px; }
 .legal p, .legal li, .legal label { color:var(--muted); line-height:1.8; }
 .legal a { color:var(--cyan); }
