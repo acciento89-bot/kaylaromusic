@@ -7,11 +7,11 @@
   <title>Impressum — KAYLARO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Permanent+Marker&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="index.html">KAYLARO</a></header>
+  <header class="site-header"><a class="brand logo-brush" href="index.html">KAYLARO</a></header>
   <main class="legal">
     <a class="back-link" href="index.html">← Zurück zur Startseite</a>
     <h1>Impressum</h1>
@@ -24,6 +24,24 @@
 
     <h2>Kontakt</h2>
     <p>E-Mail: <a href="mailto:contact@kamilunavo.com">contact@kamilunavo.com</a></p>
+    <p>Zusätzlich ist eine Kontaktaufnahme über das folgende Kontaktformular möglich.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/contact@kamilunavo.com" method="POST">
+      <input type="hidden" name="_subject" value="Kontakt über kaylaromusic.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <label>Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>E-Mail
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>Nachricht
+        <textarea name="message" required></textarea>
+      </label>
+      <button class="button button-primary" type="submit">Nachricht senden</button>
+      <p class="form-note">Mit dem Absenden werden die eingegebenen Daten zur Bearbeitung der Anfrage verarbeitet. Weitere Informationen stehen in der Datenschutzerklärung.</p>
+    </form>
 
     <h2>Verantwortlich für den Inhalt</h2>
     <p>Piotr Kaminski<br>Otto-Braun-Straße 14<br>40595 Düsseldorf</p>
@@ -31,6 +49,6 @@
     <h2>Hinweis</h2>
     <p>Diese Website dient der Präsentation des Musikprojekts KAYLARO und seiner Veröffentlichungen.</p>
   </main>
-  <footer><div><strong>KAYLARO</strong><span>© 2026 KAYLARO / Kamilunavo Records</span></div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="privacy.html">Datenschutz</a></div></footer>
+  <footer><div><strong class="logo-brush">KAYLARO</strong><span>© 2026 KAYLARO / Kamilunavo Records</span></div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="privacy.html">Datenschutz</a></div></footer>
 </body>
 </html>
