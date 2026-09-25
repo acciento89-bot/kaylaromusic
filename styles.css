@@ -82,10 +82,12 @@ button { font: inherit; }
 }
 .release-info > p:not(.release-date):not(.microcopy) { color:var(--muted); line-height:1.8; font-size:1.05rem; max-width:620px; }
 .release-info .button { margin-top:18px; }
+.streaming-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.streaming-links .button { margin-top:0; min-width:150px; }
 .microcopy { color:#6f6c7a; font-size:.78rem; margin-top:16px; }
 .about-panel { max-width:900px; padding: clamp(30px,6vw,74px); border-left:2px solid var(--pink); background: linear-gradient(90deg, rgba(255,45,198,.06), transparent); }
 .about-panel > p:not(.kicker) { color:var(--muted); line-height:1.9; font-size:1.08rem; max-width:760px; }
-.social-grid { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); }
+.social-grid { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); }
 .social-grid a { min-height:140px; padding:28px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-end; font-family:Inter, system-ui, sans-serif; font-weight:800; font-size:clamp(1rem,2vw,1.35rem); transition:.2s; }
 .social-grid a:hover { background:rgba(255,255,255,.04); color:var(--cyan); }
 .social-grid a:last-child { border-right:0; }
@@ -93,7 +95,7 @@ button { font: inherit; }
 .social-name svg { width:30px; height:30px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
 .social-name svg .fill { fill:currentColor; stroke:none; }
 .social-name svg path:not(.fill-dark) { fill:none; }
-.social-grid a:nth-child(2) .social-name svg path, .social-grid a:nth-child(3) .social-name svg path:first-child { fill:currentColor; stroke:none; }
+.social-grid a:nth-child(2) .social-name svg path, .social-grid a:nth-child(3) .social-name svg path:first-child, .social-grid a:nth-child(4) .social-name svg path { fill:currentColor; stroke:none; }
 .social-name svg .fill-dark { fill:var(--bg); stroke:none; }
 .final-cta { text-align:center; padding-top:150px; padding-bottom:150px; }
 .final-cta .button { margin-top:34px; }
