@@ -132,3 +132,8 @@ footer strong { color:#fff; font-size:1.25rem; }
 @media(max-width:780px) { .upcoming-card { grid-template-columns:1fr; } .upcoming-art strong { font-size:clamp(2.3rem,11vw,4rem); } }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior:auto !important; animation:none !important; transition:none !important; } .reveal { opacity:1; transform:none; } }
+
+/* October 2026: release feature */
+.hero-upcoming{border-color:rgba(76,236,172,.55);background:linear-gradient(90deg,rgba(76,236,172,.13),rgba(255,45,198,.10));color:#daffe9}
+.upcoming-card{border-color:rgba(76,236,172,.3);background:linear-gradient(130deg,rgba(48,230,255,.11),rgba(141,73,255,.16),rgba(255,45,198,.07))}
+.release-platforms{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.release-platforms span{border:1px solid rgba(255,255,255,.16);border-radius:100px;padding:8px 12px;background:rgba(255,255,255,.05);color:#dddde8;font-size:.78rem;font-weight:700}
